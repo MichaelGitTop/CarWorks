@@ -5,6 +5,8 @@
   bottom: 60px;
   left: 0;
   right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .m_container .chooseSer {
   overflow: hidden;
@@ -125,6 +127,32 @@
   text-align: center;
   line-height: 24px;
   color: #666;
+}
+.m_container .personalInfo {
+  padding: 10px 0;
+}
+.m_container .personalInfo .info {
+  height: 50px;
+}
+.m_container .personalInfo .info .info_title {
+  float: left;
+  width: 25%;
+  line-height: 50px;
+  font-size: 16px;
+}
+.m_container .personalInfo .info input {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  background: transparent;
+  outline-style: none;
+  text-indent: 5px;
+  border-radius: 0px;
 }
 
 footer {

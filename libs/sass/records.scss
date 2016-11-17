@@ -2,6 +2,7 @@
 
 .m_container{
     position: absolute; top: 80px; bottom: 60px; left: 0; right: 0;
+    overflow-x: hidden; overflow-y: auto;
     .chooseSer{
         overflow: hidden;
         p:first-child{
@@ -79,6 +80,25 @@
             span:nth-child(3){
                 float: right; width: 20%; overflow: hidden; text-align: center; line-height: 24px;
                 color: #666;
+            }
+        }
+    }
+    
+    .personalInfo{
+        padding: 10px 0;
+        .info{
+            height: 50px;
+            .info_title{
+                float: left; width: 25%; line-height: 50px; 
+                font-size: 16px;
+            }
+            input{
+                float: left; width: 75%;
+                margin-top: 10px; line-height: 30px;
+                font-size: 16px; height: 30px;
+                border: none; border-bottom: 1px solid #CCC;
+                background: transparent; outline-style: none;
+                text-indent: 5px; border-radius: 0px;
             }
         }
     }
