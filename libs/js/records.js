@@ -113,6 +113,17 @@ myApp.controller( "containerCtrl", function( $scope, $http, $compile ) {
 		}
 	}
 	
+//	window.onload = function(){
+		$( '.phoneNum input' ).on( "keyup", function( evt ){
+			var arr = $( this ).val();
+			if( evt.keyCode != 8 && ( arr.length == 3 || arr.length == 8 ) ){
+				arr = arr + '-';
+			}
+			$( this ).val( arr )
+		});
+//	}
+	
+	
 	//计算总金额
 //	function count_pay(){
 //		var pay_count = 0;
