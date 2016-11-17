@@ -34,7 +34,7 @@ myApp.controller( "containerCtrl", function( $scope, $http, $compile ) {
 		window.onload = function(){
 			for( var key in $scope.addedSers ){
 				if( $scope.addedSers[key].serPrice_now <= 0 ){
-					$( '.addedSer .ser_p:eq(' + $scope.addedSers[key].index + ')').trigger( 'click' )
+					$( '.addedSer .ser_p:eq(' + $scope.addedSers[key].index + ')').trigger( 'click' );
 				}
 			}
 		}
@@ -113,15 +113,14 @@ myApp.controller( "containerCtrl", function( $scope, $http, $compile ) {
 		}
 	}
 	
-//	window.onload = function(){
-		$( '.phoneNum input' ).on( "keyup", function( evt ){
-			var arr = $( this ).val();
-			if( evt.keyCode != 8 && ( arr.length == 3 || arr.length == 8 ) ){
-				arr = arr + '-';
-			}
-			$( this ).val( arr )
-		});
-//	}
+	//手机号码格式化
+	$( '.phoneNum input' ).on( "keyup", function( evt ){
+		var arr = $( this ).val();
+		if( evt.keyCode != 8 && ( arr.length == 3 || arr.length == 8 ) ){
+			arr = arr + '-';
+		}
+		$( this ).val( arr )
+	});
 	
 	
 	//计算总金额
