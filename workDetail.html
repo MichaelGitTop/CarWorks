@@ -1,0 +1,9 @@
+	<div class="work_details">
+		<div class="mask" ng-click="close()"></div>
+		<div class='details'>
+			<div class='title' ng-bind="detailPage.serviceType"></div>
+			<div class='header'><h5><i class="fa fa-car"></i>清理部位</h5><ul><li ng-repeat="i in detailPage.workDetais.parts" ng-bind-html="circle+i"></li></ul></div>
+			<div class='content'><h5><i class="fa fa-lightbulb-o"></i>服务亮点</h5><ul><li ng-repeat="i in detailPage.workDetais.strengths" ng-bind-html="circle+i"></li></ul></div>
+			<div class='footer'><h5><i class="fa fa-gavel"></i>服务工具</h5><ul><li ng-repeat="i in detailPage.workDetais.tool" ng-bind-html="circle+i"></li></ul></div>
+		</div>
+	</div>

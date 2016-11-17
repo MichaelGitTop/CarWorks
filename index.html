@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+   <!-- plug-->
+    <link rel="stylesheet" href="libs/plug/font-awesome-4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/plug/bootstrap/css/bootstrap.min.css" />
+    <!--auto-->
+    <link rel="stylesheet" href="libs/css/index.css" />
+	<!-- plug-->
+    <script type="text/javascript" src="libs/plug/jquery2.1.1/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="libs/plug/angularJS/angular.min.js" ></script>
+    <script src="libs/plug/angularJS/angular-sanitize.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--auto-->
+    <script type="text/javascript" src="libs/js/index.js" ></script>
+    
+    
+
+</head>
+<body ng-app="myApp" ng-controller="headerCtrl">
+	<header ></header>
+	<div class="z_container" ng-controller="containerCtrl">
+		<div class="service" ng-repeat="key in data" ng-click="chooseService(key)">
+			<div class="imgBox">
+				<img ng-src="{{key.imgUrl}}" img-height/>
+			</div>
+			<div class="infoBox">
+				<div class="serviceType">
+					<p ng-bind="key.serviceType"></p>
+					<i class="fa fa-question-circle" ng-click="details(key,$event)"></i>
+					<span><i>￥</i><b ng-bind="key.servicePrice"></b></span>
+				</div>
+				<div class="serviceLength" ng-bind="key.serviceLength"></div>
+				<div class="serviceProfiles" ng-bind="key.serviceProfiles"></div>
+			</div>
+		</div>
+	</div>
+	<div class="z_details"></div>
+</body>
+</html>

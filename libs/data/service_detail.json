@@ -1,0 +1,29 @@
+{
+	"SE1001": "釉腊外洗",
+	"SE1002": "釉腊内外洗",
+	"SE1003": "磨泥修复打蜡",
+	"SE1004": "漆面镀晶",
+	"SE1005": "内饰深层养护",
+	"addedSer": {
+		"雨刮水添加": {
+			"serPrice_now": 0,
+			"serPrice_old": 30,
+			"serTime": 2
+		},
+		"胎压检查": {
+			"serPrice_now": 0,
+			"serPrice_old": 30,
+			"serTime": 5
+		},
+		"全车玻璃镀膜": {
+			"serPrice_now": 58,
+			"serPrice_old": null,
+			"serTime": 100
+		},
+		"车厢除菌": {
+			"serPrice_now": 58,
+			"serPrice_old": null,
+			"serTime": 100
+		}
+	}
+}

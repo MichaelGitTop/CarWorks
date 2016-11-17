@@ -1,0 +1,83 @@
+@import url(global.css);
+@import url(workDetails.css);
+.z_container {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: whitesmoke;
+  overflow: auto; }
+
+.service {
+  width: 94%;
+  overflow: hidden;
+  background: white;
+  margin: 18px auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px #dedede; }
+
+.imgBox {
+  flex: 1.5;
+  overflow: hidden; }
+
+.imgBox img {
+  height: 90px; }
+
+.infoBox {
+  flex: 3;
+  overflow: hidden;
+  padding: 15px; }
+
+.serviceType {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden; }
+
+.serviceType p {
+  line-height: 20px;
+  float: left;
+  font-size: 16px;
+  color: #333333; }
+
+.serviceType i {
+  line-height: 20px;
+  float: left;
+  display: block;
+  color: #cc3333;
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 5px; }
+
+.serviceType span {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  color: #cc3333;
+  font-size: 18px; }
+
+.serviceType span i {
+  display: block;
+  line-height: 24px; }
+
+.serviceType span b {
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px; }
+
+.serviceLength {
+  line-height: 20px;
+  color: #999999;
+  font-size: 12px; }
+
+.serviceProfiles {
+  line-height: 20px;
+  overflow: hidden;
+  color: #666666; }
+
+/*# sourceMappingURL=index.css.map */

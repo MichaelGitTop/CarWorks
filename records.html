@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登记信息</title>
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--plugin css-->
+	    <link rel="stylesheet" href="libs/plug/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="libs/plug/font-awesome-4.6.3/css/font-awesome.min.css" />
+	    <!--auto css-->
+	    <link rel="stylesheet" href="libs/css/records.css" />
+	    <!--plugin js-->
+	    <script type="text/javascript" src="libs/plug/jquery2.1.1/jquery-2.1.1.min.js" ></script>
+	    <script type="text/javascript" src="libs/plug/angularJS/angular.min.js" ></script>
+	    <!--auto js-->
+	    <script type="text/javascript" src="libs/js/records.js" ></script>
+    
+	</head>
+	<body ng-app="myApp" ng-controller="containerCtrl">
+		<header ng-controller="headerCtrl"></header>
+		
+		<div class="m_container">
+			<div class="line"></div>
+			<div class="chooseSer container_92">
+				<p>已选服务</p>
+				<p>
+					<span class="serName" ng-bind="serName">彩蜡内外洗</span>
+					<span class="serPrice"><i>￥</i><i ng-bind="serPrice">9.9</i></span>
+					<span class="serTime"><i ng-bind="serTime">30</i>分钟</span>
+				</p>
+			</div>
+			<div class="line"></div>
+			
+			<div class="addedSer container_92">
+				<p>添加服务</p>
+				<p ng-repeat="ser in addedSers" ng-click="choose_addedSer(ser, $index); allPrice()" class="ser_p">
+					<span class="serName">
+						<i class="fa fa-square-o" ng-class=" ser.addedSer_check ? 'fa fa-check-square' : 'fa fa-square-o' "></i>
+						<i ng-bind="addedSer_key[$index]"></i>
+						<i class="fa fa-info-circle" noClass="square-o"></i>
+					</span>
+					<span class="serPrice"><i ng-if="ser.serPrice_old" class="serPrice_old_1">￥</i><i class="serPrice_old_2" ng-bind="ser.serPrice_old" ng-if="ser.serPrice_old">30</i><i class="serPrice_now_1">￥</i><i ng-bind="ser.serPrice_now" class="serPrice_now_2">18</i></span>
+					<span class="serTime"><i ng-bind="ser.serTime"></i>分钟</span>
+				</p>
+			</div>
+			<div class="line"></div>
+			
+			
+			
+			
+			
+		</div>
+		
+		<footer>
+			<div class="info">
+				<p>总&nbsp;&nbsp;&nbsp;价：<span ng-bind="price_count"></span>元</p>
+				<p>总耗时：<span ng-bind="serTime"></span>分钟（明早6点前完工）</p>
+			</div>
+			<div class="payBtn"><button>支付</button></div>
+		</footer>
+	</body>
+</html>

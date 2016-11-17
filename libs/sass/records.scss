@@ -1,0 +1,120 @@
+@import "global.css";
+
+.m_container{
+    position: absolute; top: 80px; bottom: 60px; left: 0; right: 0;
+    .chooseSer{
+        overflow: hidden;
+        p:first-child{
+            color: #666; margin: 6px 0 1px; line-height: 24px;
+        }
+        p:last-child{
+            overflow: hidden; height: 24px; margin-bottom: 6px;
+            span:first-child{
+                float: left; width: 55%; color: #000; font-size: 16px;
+                line-height: 24px;
+            }
+            span i{
+                font-style: normal;
+            }
+            span:nth-child(2){
+                float: right; width: 25%; text-align: right;color: #cc3333;
+                height: 24px;
+                i{
+                    font-size: 10px;
+                }
+                i:last-child{
+                    font-weight: bold; font-size: 18px; line-height: 20px;
+                }
+            }
+            span:last-child{
+                float: right; width: 20%; text-align: center; color: #666;
+                line-height: 24px;
+            }
+        }
+    }
+    .addedSer{
+        overflow: hidden;
+        p:first-child{
+            color: #666; margin: 6px 0 10px; line-height: 24px;
+        }
+        p{
+            overflow: hidden; height: 24px; margin: 15px 0 15px 0;
+            span{
+                float: left;
+                i{
+                    font-style: normal;
+                }
+            }
+            span:nth-child(1){
+                width: 55%; color: #000; font-size: 16px; line-height: 22px;
+                i{
+                    font-size: 16px; float: left;
+                }
+                i:first-child{
+                    margin: 2px 10px 0 0; color: #999; font-size: 20px;
+                }
+                i:last-child{
+                    margin: 3px 0 0 10px; color: #cc3333; font-size: 16px;
+                }
+            }
+            span:nth-child(2){
+                float: right; width: 25%; overflow: hidden; text-align: right; line-height: 25px;
+                i{
+                    font-size: 10px;
+                }
+                .serPrice_old_1{
+                    text-decoration: line-through; color: #999;
+                }
+                .serPrice_old_2{
+                    font-size: 14px; text-decoration: line-through;
+                    margin-right: 2px; color: #999;
+                }
+                .serPrice_now_1{
+                    margin-right: -2px;
+                }
+                .serPrice_now_2{
+                    font-weight: bold; font-size: 18px; line-height: 20px;
+                }
+            }
+            span:nth-child(3){
+                float: right; width: 20%; overflow: hidden; text-align: center; line-height: 24px;
+                color: #666;
+            }
+        }
+    }
+}
+
+
+footer{
+    height: 60px; background-color: #cc3333; width: 100%; position: absolute;
+    bottom: 0; left: 0;
+    .info{
+        float: left; color: #FFF;
+        p{
+            line-height: 20px; margin: 0 0 0 10px;
+        }
+        span{
+            font-size: 18px;
+        }
+        p:first-child{
+            margin-top: 10px;
+        }
+    }
+    .payBtn{
+        float: right;
+        button{
+            width: 62px; height: 32px; color: #cc3333; background-color: #FFF;
+            border: none; border-radius: 3px; margin: 14px 10px 0 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.line{
+    height: 1px; width: 100%; overflow: hidden; clear: both;
+    background-color: #CCC; transform: scaleY( 0.8 );
+}
+
+.container_92{
+    width: 92%; margin: 0 auto;
+}
