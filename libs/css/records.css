@@ -143,6 +143,9 @@ footer .info p {
   line-height: 20px;
   margin: 0 0 0 10px;
 }
+footer .info p i {
+  font-style: normal;
+}
 footer .info span {
   font-size: 18px;
 }
@@ -150,7 +153,9 @@ footer .info p:first-child {
   margin-top: 10px;
 }
 footer .payBtn {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 footer .payBtn button {
   width: 62px;

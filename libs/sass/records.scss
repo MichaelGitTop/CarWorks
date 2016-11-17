@@ -92,6 +92,7 @@ footer{
         float: left; color: #FFF;
         p{
             line-height: 20px; margin: 0 0 0 10px;
+            i{ font-style: normal; }
         }
         span{
             font-size: 18px;
@@ -101,7 +102,7 @@ footer{
         }
     }
     .payBtn{
-        float: right;
+        position: absolute; right: 0; top: 0;
         button{
             width: 62px; height: 32px; color: #cc3333; background-color: #FFF;
             border: none; border-radius: 3px; margin: 14px 10px 0 0;

@@ -33,7 +33,7 @@
 			
 			<div class="addedSer container_92">
 				<p>添加服务</p>
-				<p ng-repeat="ser in addedSers" ng-click="choose_addedSer(ser, $index); allPrice()" class="ser_p">
+				<p ng-repeat="ser in addedSers" ng-click="choose_addedSer(ser, $index); allPrice(); allTime()" class="ser_p">
 					<span class="serName">
 						<i class="fa fa-square-o" ng-class=" ser.addedSer_check ? 'fa fa-check-square' : 'fa fa-square-o' "></i>
 						<i ng-bind="addedSer_key[$index]"></i>
@@ -45,6 +45,10 @@
 			</div>
 			<div class="line"></div>
 			
+						
+			<div class="line"></div>
+			
+			
 			
 			
 			
@@ -54,7 +58,7 @@
 		<footer>
 			<div class="info">
 				<p>总&nbsp;&nbsp;&nbsp;价：<span ng-bind="price_count"></span>元</p>
-				<p>总耗时：<span ng-bind="serTime"></span>分钟（明早6点前完工）</p>
+				<p>总耗时：<span ng-bind="time_count"></span>分钟（<i ng-bind="completionDate"></i>）</p>
 			</div>
 			<div class="payBtn"><button>支付</button></div>
 		</footer>
